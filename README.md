@@ -8,5 +8,6 @@ Fausto Sánchez Hoya
 faustosanchezhoya.com
 <br></br>
 faustosanchezhoya@gmail.com
+github.com/FaustoSH
 <br></br>
 linkedin.com/in/faustosh
