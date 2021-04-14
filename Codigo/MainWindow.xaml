@@ -1,0 +1,101 @@
+﻿<Window x:Class="Practica_Final.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_Final"
+        mc:Ignorable="d"
+        Title="Graphinator3000" Height="450" Width="800" MinHeight="396" MinWidth="680" SizeChanged="Window_SizeChanged" WindowState="Maximized">
+
+    <Grid Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Botones del menú-->
+        <Button Name="openButton" Grid.Row="0" Grid.Column="0" Style="{DynamicResource openButtonStyle}" BorderThickness="0" Click="openButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\openFolder\openFolder1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="newButton" Grid.Row="0" Grid.Column="1" BorderThickness="0" Style="{DynamicResource newButtonStyle}" Click="NewButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\newFile\newFile1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="saveButton" Grid.Row="0" Grid.Column="2" BorderThickness="0" Style="{DynamicResource saveButtonSytle}" Click="saveButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\save\save1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="exportButton" Grid.Row="0" Grid.Column="3" BorderThickness="0" Style="{DynamicResource exportButtonStyle}" Click="exportButton_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Images\export\exportar1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="dataConfigButton" Grid.Row="0" Grid.Column="4" BorderThickness="0" Style="{DynamicResource dataConfigButtonStyle}" Click="DataConfigButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\table\table1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="graficsButton" Grid.Row="0" Grid.Column="5" BorderThickness="0" Style="{DynamicResource graphicsButtonStyle}" Click="graficsButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\graphics\graphics1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="helpButton" Grid.Row="0" Grid.Column="6" BorderThickness="0" Style="{DynamicResource helpButtonStyle}" Click="helpButton_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Images\help\help1.png"/>
+            </Button.Background>
+        </Button>
+
+        <!--Label Tabla nº-->
+        <Border Grid.Row="1" Grid.Column="0" BorderThickness="1" BorderBrush="Gray"  Margin="0 2 0 2" CornerRadius="10" Background="LightGray">
+            <Label Name="tableNumLabel" Grid.Row="1" Grid.Column="0" Content="Tabla nº0" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Impact" FontSize="20" Foreground="Black" Background="LightGray" MouseLeftButtonDown="tableNumLabel_MouseLeftButtonDown"/>
+        </Border>
+
+        <!--StackPanle leyenda-->
+        <Border Grid.Row="1" Grid.RowSpan="2" Grid.Column="6" BorderThickness="1" BorderBrush="Gray" Margin="10 2 10 2" CornerRadius="10" Background="LightGray">
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <StackPanel Name="legendStackPanel" Background="LightGray" Margin="3" >
+                    <Label Name="legendLabel" Content="Leyenda:" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="IMPACT" FontSize="30" Foreground="Black" Background="LightGray" Margin="0"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <!--Canvas Gráfico-->
+        <Border Grid.Row="1" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="5" Margin="10 2 10 2" BorderThickness="1" BorderBrush="#dee2e3" ClipToBounds="True">
+            <Canvas Name="grafico" Background="#f5f9fa" SizeChanged="grafico_SizeChanged" MouseMove="grafico_MouseMove" MouseRightButtonUp="grafico_MouseRightButtonUp"/>
+        </Border>
+
+        <!--Botones de zoom
+        En estos botones se incrustran dentro de un subgrip para poder centrarlos adecuadamente y que 
+        si se clicka en la zona blanca  no seleccione el botón-->
+
+        <Button Name="zoomInButton" Grid.Row="3" Grid.Column="6" Margin="37 0" BorderBrush="#00000000"  Style="{DynamicResource zoomInButtonStyle}" Click="zoomInButton_Click" >
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Images\zoomIn\zoomIn1.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button Name="zoomOutButton" Grid.Row="4" Grid.Column="6" Margin="37 0" BorderBrush="#00000000" Style="{DynamicResource zoomOutButtonStyle}" Click="zoomOutButton_Click" >
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Images\zoomOut\zoomOut1.png" />
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

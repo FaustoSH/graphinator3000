@@ -1,0 +1,41 @@
+﻿<Window x:Class="Practica_Final.Clippo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_Final"
+        mc:Ignorable="d"
+        Title="Ayuda" Height="450" Width="220" ResizeMode="CanMinimize" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Name="clippoLabel" Grid.Row="0" Style="{DynamicResource clippoLabelStyle}">
+            <Label.Background>
+                <ImageBrush ImageSource="Images\clippo\clippo1.png" Stretch="Uniform"/>
+            </Label.Background>
+        </Label>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <ComboBox Name="consejosCombobox" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged">
+                <Label Name="ayudAbrir" Content="Quiero abrir un proyecto"/>
+                <Label Name="ayudaNuevo" Content="Quiero crear un proyecto nuevo"/> 
+                <Label Name="ayudaGuardar" Content="Quiero guardar mis datos"/> 
+                <Label Name="ayudaExportar" Content="Quiero exportar mi gráfica"/> 
+                <Label Name="ayudaEditar" Content="Quiero editar mis datos"/> 
+                <Label Name="ayudaPersonalizar" Content="Quiero personalizar mi grafica"/> 
+                <Label Name="ayudaAyuda" Content="Quiero ayuda"/>
+                <Label Name="ayudaCreditos" Content="¿Quién es tu creador?"/>
+                <Label Name="ayudaVida" Content="¿Cuál es el sentido de la vida?"/>
+            </ComboBox>
+        </StackPanel>
+        <TextBlock Grid.Row="2" Name="consejos" FontSize="13" Padding="10" TextWrapping="Wrap"/>
+        <Button Name="aceptButton" Grid.Row="3" BorderThickness="0" Margin="70 0" Style="{DynamicResource aceptButtonStyle}" Click="AceptButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\acept\acept1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

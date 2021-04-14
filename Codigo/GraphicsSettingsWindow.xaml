@@ -1,0 +1,31 @@
+﻿<Window x:Class="Practica_Final.GraphicsSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_Final"
+        mc:Ignorable="d"
+        Title="Graphics Settings" Height="450" Width="220" Closing="Window_Closing" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Button Name="graficsButton" Grid.Row="0" BorderThickness="0" Margin="40" Style="{DynamicResource graphicsButtonStyle}" Click="graficsButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\graphics\graphics1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="aceptButton" Grid.Row="2" BorderThickness="0" Margin="70 0" Style="{DynamicResource aceptButtonStyle}" Click="aceptButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\acept\acept1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="colorButton" Grid.Row="1" BorderThickness="0" Margin="60 0" Style="{DynamicResource colorButtonStyle}" Click="colorButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\color\color1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

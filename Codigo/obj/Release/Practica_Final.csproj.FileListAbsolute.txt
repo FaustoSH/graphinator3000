@@ -1,0 +1,16 @@
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\bin\Release\Practica_Final.exe.config
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\bin\Release\Practica_Final.exe
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\bin\Release\Practica_Final.pdb
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final.csprojAssemblyReference.cache
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\MainWindow.g.cs
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\App.g.cs
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final_MarkupCompile.cache
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final_MarkupCompile.lref
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\App.baml
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\MainWindow.baml
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final.g.resources
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final.Properties.Resources.resources
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final.csproj.GenerateResource.cache
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final.csproj.CoreCompileInputs.cache
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final.exe
+F:\Almacenamiento\UNIVERSIDAD\Tercero\Cuatri 1\Interfaces gráficas\Practica_Final\Practica_Final\obj\Release\Practica_Final.pdb

@@ -1,0 +1,52 @@
+﻿<Window x:Class="Practica_Final.DataConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_Final"
+        mc:Ignorable="d"
+        Title="Datos" Height="700" Width="450" ResizeMode="CanMinimize"  Closing="Window_Closing" >
+    <Grid Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
+        
+        <!--Botones del menú-->
+        <Button Name="aceptButton" Grid.Row="0" Grid.Column="4" BorderThickness="0" Style="{DynamicResource aceptButtonStyle}" Click="AceptButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\acept\acept1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="trashButton" Grid.Row="0" Grid.Column="3" BorderThickness="0" Style="{DynamicResource trashButtonStyle}" Click="trashButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\trash\trash1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="mathsButton" Grid.Row="0" Grid.Column="0" BorderThickness="0" Style="{DynamicResource mathsButtonStyle}" Click="MathsButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\maths\maths1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="sortButton" Grid.Row="0" Grid.Column="1" BorderThickness="0" Style="{DynamicResource sortButtonStyle}" Click="sortButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\sort\sort1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="newTableButton" Grid.Row="0" Grid.Column="2" BorderThickness="0" Style="{DynamicResource newTableButtonStyle}" Click="NewTableButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\newTable\newTable1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
+        <TabControl Name="tablasTabControl" Grid.Row="1" Grid.ColumnSpan="6" Grid.Column="0" TabStripPlacement="Top" SelectionChanged="TablasTabControl_SelectionChanged" />
+    </Grid>
+</Window>

@@ -1,0 +1,57 @@
+﻿<Window x:Class="Practica_Final.DataMathWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_Final"
+        mc:Ignorable="d"
+        Height="300" Width="300" ResizeMode="CanMinimize" Title="Introducción matemática" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="xO" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" Foreground="Black"/>
+        <Label Content="xF" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" Foreground="Black"/>
+        <TextBox Name="xO" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20 10 20 10" BorderBrush="Black" FontSize="20" TextAlignment="Center"/>
+        <TextBox Name="xF" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2" Margin="20 10 20 10" BorderBrush="Black" FontSize="20" TextAlignment="Center"/>
+        <Label Content="Grado:" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" Foreground="Black"/>
+        <Label Name="gradoLB" Content="0" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Impact" FontSize="30" Foreground="Gray"/>
+        <Button Name="plusButton" Grid.Row="2" Grid.Column="4" BorderBrush="#00000000"  Style="{DynamicResource zoomInButtonStyle}" Click="plusButton_Click" >
+            <Button.Background>
+                <ImageBrush Stretch="Uniform" ImageSource="Images\zoomIn\zoomIn1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="minusButton" Grid.Row="2" Grid.Column="5" BorderBrush="#00000000" Style="{DynamicResource zoomOutButtonStyle}" Click="minusButton_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="Images\zoomOut\zoomOut1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
+        <ScrollViewer  Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="6" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <StackPanel  Name="dataStackPanel" Orientation="Horizontal" CanHorizontallyScroll="True" CanVerticallyScroll="False"/>
+        </ScrollViewer>
+
+        <Button Name="aceptButton" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BorderThickness="0" Style="{DynamicResource aceptButtonStyle}" Click="AceptButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\acept\acept1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Name="cancelButton" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" BorderThickness="0" Style="{DynamicResource cancelButtonStyle}" Click="cancelButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images\cancel\cancel1.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
